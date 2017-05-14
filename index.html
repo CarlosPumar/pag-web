@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML &amp; CSS</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="imagenes/html5-css3-js.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hoja-de-estilo.css">
+</head>
+<body>
+       
+    <!--Menu-->   
+<nav class="navbar navbar-default navbar-fixed-top menu-color" role="navigation">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-wrapper">
+
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#slider">HTML &amp; CSS</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">HTML <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#que-es-html">¿Qué es HTML?</a></li>
+                  <li><a href="#marcadores-html">Marcadores HTML</a></li>
+                  <li><a href="#codigos-basicos">Códigos básicos de HTML</a></li>
+                </ul>
+              </li>
+                              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">CSS <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#que-es-css">¿Qué es CSS?</a></li>
+                  <li><a href="#componentes-estilo">Componentes de estilo CSS</a></li>
+                  <li><a href="#selectores-css">Selectores CSS</a></li>
+                </ul>
+              </li>
+              
+              </ul>
+            </div>
+    </div>
+</nav>
+    
+    <div id="slider">
+        <br>
+    </div>
+    <!--Carousel-->
+    <div id="carousel-1" class="carousel slide" data-ride="carousel">
+        <!--Indicadores-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-1" data-slide-to="1"></li>
+            <li data-target="#carousel-1" data-slide-to="2"></li>
+        </ol>
+                
+        <!--Contenedor de sliders-->
+        <div class="carousel-inner" role="listbox">
+                   
+            <div class="item active">
+                <img src="imagenes/imagen-slider-1.png" class="img-responsive" alt="">
+                <div class="carousel-caption">
+                    <h1>Bienvenido a esta página</h1>
+                    <h1>web, creada por alumnos del</h1>
+                    <h1>IES Vicente Aleixandre</h1>
+                    <br><br><br><br><br><br><br><br>
+
+                </div>
+            </div>
+                    
+            <div class="item">
+                <img src="imagenes/imagen-slider-2.png" class="img-responsive" alt="">
+                <div class="carousel-caption">
+                    <h1>Encontrarás información</h1>
+                    <h1>acerca de HTML y CSS, y</h1>
+                    <h1>sus variantes</h1>
+                    <br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+                    
+            <div class="item">
+                <img src="imagenes/imagen-slider-3.png" alt="">
+                <div class="carousel-caption">
+                    <h1>¡Aquí aprenderás a</h1>
+                    <h1>construir tu propia</h1>
+                    <h1>página web!</h1>
+                    <br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+                    
+        </div>
+                
+        <!--Controles-->
+        <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+                
+        <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+                
+    </div>
+    
+   
+    <!--Introduccion-->
+    <div id="introduccion" class="clearfix">
+        <br><br><br>
+        <div class="col-md-4">
+           <img src="imagenes/html-icon.png" alt="" class="img-circle center-block" width="100px" height="107px">
+           <h3 class="text-center">HTML</h3>
+           <p class="introduccion text-center">HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, que podría ser traducido como Lenguaje de Formato de Documentos para Hipertexto.</p>
+        </div>
+        <div class="col-md-4">
+           <img src="imagenes/css-icon.png" alt="" class="img-circle center-block" width="100px" height="107px">
+           <h3 class="text-center">CSS</h3>
+           <p class="introduccion text-center">CSS, son las siglas de Cascading Style Sheets, en español Hojas de estilo en Cascada. Es una tecnología que nos permite crear páginas web de una manera más exacta. Gracias a las CSS somos mucho más dueños de los resultados finales de la página, pudiendo hacer muchas cosas que no se podía hacer utilizando solamente HTML, como incluir márgenes, tipos de letra, fondos, colores...
+           </p>
+        </div>
+        <div class="col-md-4">
+           <img src="http://www.free-icons-download.net/images/html5-icons-891.png" alt="" class="img-circle center-block" width="100px" height="107px">
+           <h3 class="text-center">HTML5</h3>
+           <p class="introduccion text-center">HTML5 significa HyperText Markup Language, versión 5, ¿qué es esto? Un lenguaje en el que se escriben las páginas Web, que permite hacer enlaces (hipertexto) y que es leído por los navegadores para poder mostrar la información en la pantalla de tu ordenador de una forma correcta.
+           </p>
+        </div>
+
+    </div>
+    
+    <!--¿Quiénes somos?-->
+       <hr  id="quienes-somos" class="division">
+        <div>
+           <br>
+           <h2 class="text-center">¿Quiénes somos?</h2> 
+           <br><br>
+           <div class="clearfix">
+               <div class="col-md-6">
+                   <img src="http://www.juntadeandalucia.es/averroes/centros-tic/41007357/helvia/sitio/upload/img/redIes_patio_gente_640placared.jpg" alt="" class="center-block img-rounded">
+               </div>
+               <div class="col-md-5">
+                   <p id="parrafo-quienes-somos" class="text-center">Somos un grupo de alumnos del IES Vicente Aleixandre, cursantes de la asignatura Programación y Computación, y con este proyecto os mostramos las bases de HTML y CSS</p>
+                   <hr class="division-2"><br>
+                   <h4 class="text-center">Componentes del grupo</h4><br>
+                   <p class="text-center">Ainhoa Fatuarte</p>
+                   <p class="text-center">Antonio Mulero</p>
+                   <p class="text-center">Juan José Valderrama</p>
+                   <p class="text-center">Carlos Pumar</p>
+               </div>
+           </div>
+        </div>
+        
+    <!--HTML-->
+    <div id="parte-html">
+       <hr class="division"><br>
+       <h2 id="que-es-html" class="text-center prueba">HTML</h2><br>
+       <div class="parrafo">
+       
+        <!--Que es html-->
+        <h3>¿Qué es HTML?</h3><br>
+        <p>HTML, sigla en inglés de HyperText Markup Language (lenguaje de marcas de hipertexto), hace referencia al lenguaje de marcado para la elaboración de páginas web. Define una estructura básica y un código para la creación de contenido en estas. Se considera el lenguaje web más importante, siendo su invención crucial en la aparición y desarrollo de la World Wide Web (WWW).</p><br>
+        <p>Basa su desarrollo en la diferenciación. Para añadir un elemento externo a la página, no se incrusta en el código, sino que se hace una referencia a la ubicación de dicho elemento. Así, la página web contiene solamente texto mientras que recae en el navegador web la tarea de unir todos los elementos y visualizar la página final. Busca ser un lenguaje que permita que cualquier página web pueda ser interpretada de la misma forma por cualquier navegador web actualizado.</p><br>
+        <p>A lo largo de sus versiones se han ido incorporado y suprimido diversas características. Para interpretar correctamente una nueva versión, los desarrolladores deben incorporar estos cambios y el usuario debe usar la nueva versión del navegador. Un navegador desactualizado no será capaz de interpretar correctamente una página web escrita en una versión superior a la que pueda interpretar.  Así mismo, las páginas escritas en una versión anterior deberían ser actualizadas o reescritas, lo que no siempre se cumple. Por ello, ciertos navegadores todavía mantienen la capacidad de interpretar páginas web de versiones HTML anteriores.
+        </p>
+        <hr id="marcadores-html" class="division-2"><br>
+       </div>
+    
+    
+    <!--Marcadores html-->
+    <div class="parrafo">
+        <h3>Marcadores HTML</h3><br>
+        <p>El HTML se escribe en forma de «etiquetas», rodeadas por corchetes angulares (/,>). Puede describir la apariencia de un documento e incluir un tipo de programa llamado script. Consta de varios componentes: elementos, atributos, tipos de data y la declaración de tipo de documento.</p>
+    </div><br><br>
+    
+    <div class="clearfix">
+       <div class="col-md-4 col-md-offset-1 tabla-1">
+          <h4 class="text-center">Elementos</h4><br>
+          <p>Los elementos son la estructura básica. Tienen dos propiedades: atributos y contenido. Tienen una etiqueta de inicio (&lt; elemento >) y una de cierre (&lt;/ elemento >). Los atributos están contenidos en la de inicio y el contenido entre las dos. Algunos no tienen contenido ni etiqueta de cierre.</p><br>
+          <ul>
+              <li>El marcado estructural describe el propósito del texto. Por ejemplo, la etiqueta h2 establece el contenido como un encabezamiento.</li><br>
+              <li>El marcado presentacional describe la apariencia del texto. Por ejemplo, con la etiqueta b o strong se indica que los navegadores web visuales deben mostrar el texto en negrita.</li><br>
+              <li>El marcado hipertextual se utiliza para enlazar partes del documento con otros o con otras partes. Es necesario utilizar la etiqueta de a junto con href, que establecerá la dirección URL.</li>
+          </ul>
+          
+       </div>
+       <div class="col-md-4 col-md-offset-2 tabla-1">
+          <h4 class="text-center">Atributos</h4><br>
+          <p>La mayoría de los atributos son pares nombre-valor, separados por un signo de igual y escritos en la etiqueta de inicio. El valor puede estar rodeado por comillas, aunque ciertos tipos de valores no tienen por qué. De todas maneras, dejar los valores sin comillas es considerado poco seguro. Hay algunos atributos que afectan al elemento simplemente por su presencia.</p><br>
+          <img src="http://librosweb.es/img/xhtml/esquema_elementos_html.gif" alt="" class="img-rounded center-block" width="400px" height="130"><br><br><br><br><br><br>
+       </div>
+    </div>
+    
+    <div class="parrafo">
+        <hr id="codigos-basicos" class="division-2"><br>
+    </div>
+    
+    <div class="parrafo">
+        <h3>Códigos básicos de HTML</h3><br>
+        <p>&lt; html >: Inicio del documento, le indica al navegador que lo siguiente debe ser interpretado como código HTML. Aunque en teoría lo que define el tipo de documento es el DOCTYPE.</p>
+        <p>&lt; head >: Define la cabecera del documento HTML; a suele contener información que no se muestra directamente al usuario como, por ejemplo, el título de la ventana del navegador.</p>
+        <p>&lt; body >: Define el contenido principal o cuerpo del documento. Esta es la parte que se muestra en el navegador; dentro pueden definirse propiedades comunes a toda la página.</p>
+        <img src="http://librosweb.es/img/xhtml/esquema_etiquetas_documento_html.gif" alt="" class="center-block"><br><br><br>
+        <p>Dentro del cuerpo body es posible encontrar numerosas etiquetas. Por ejemplo:</p><br>
+        <p>&lt; h1 > a &lt; h6 >: Encabezados o títulos del documento con diferente relevancia.</p>
+        <p>&lt; a >: Hipervínculo o enlace. Debe definirse el enlace mediante href.</p>
+        <p>&lt; img >: Incluye una imagen. Requiere del atributo src, que indica la ruta en la que se encuentra la imagen.</p>
+        <p>&lt; li >, &lt; ol > y &lt; ul >: Etiquetas para listas.</p>
+        <p>&lt; strong >: Texto en negrita.</p>
+        <p>&lt; em >: Texto en cursiva.</p>
+        <p>&lt; del >: Texto tachado.</p>
+        <p>&lt; u >: Texto subrayado.</p>
+    </div>
+    <hr id="parte-css" class="division"><br>
+    
+    </div>
+    
+    <div>
+        <h2 id="que-es-css" class="text-center">CSS</h2><br>
+        <div class="parrafo">
+        <h3>¿Qué es CSS?</h3><br>
+        <p>CSS (Cascading Stylesheets: Hojas de estilo en cascada). Es un lenguaje de diseño gráfico con el que podemos definir y crear la presentación de un documento escrito en un lenguaje de marcas, como HTML.Podemos establecer el diseño visual de las páginas web. </p><br>
+        <p>CSS está diseñado para marcar la separación del contenido del documento y la forma en la que este está presentado, incluyendo colores y tipos de fuentes. Podemos conseguir que varios documentos HTML compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css , reduciendo así la complejidad y la repetición de código.</p><br>
+        <p>CSS está creado en diferentes niveles. La primera especificación fue CSS1 (1996), siendo la primera recomendada por el World Wide Web Consortium. El Nivel 2 de CSS necesitó 9 años, desde Agosto de 2002 hasta Junio de 2011, para alcanzar el estado de Recomendación. Esto fué debido al hecho de que algunas características secundarias fueron retiradas de las especificaciones globales, con el fin de acelerar la normalización de las características no problemáticas. Formalmente, no existe un estándar de CSS3 por sí solo, cada módulo es estandarizado independientemente, por lo que el estándar CSS consiste en CSS2.1 modificado. Se emplea la etiqueta &lt; style > de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección &lt; head >).
+        <hr id="componentes-estilo" class="division-2"><br>
+        </div>
+        
+        <div class="parrafo">
+        <h3>Componentes de estilo CSS</h3><br>
+        <p><b>Regla:</b> cada uno de los estilos que componen una hoja de estilos CSS. Se compone de una parte de selectores, otra de declaración y llaves de cierre y apertura.</p>
+        <p><b>Selector:</b> indica los elementos HTML a los que se aplica la regla CSS.</p>
+        <p><b>Declaración:</b> especifica los estilos que se aplican a los elementos.</p>
+        <p><b>Propiedad:</b> característica que se modifica en el elemento seleccionado.</p>
+        <p><b>Valor:</b> establece el nuevo valor de la característica modificada en el elemento.</p><br><br>
+        <img src="https://www.w3schools.com/css/selector.gif" alt="">
+        <hr id="selectores-css" class="division-2"><br>
+        </div>
+           
+        <div class="parrafo">
+        <h3>Selectores CSS</h3><br>
+        <p>Un selector CSS es el nexo de unión entre la hoja de estilos y los documentos a los que se aplique dicha hoja. En CSS vamos a encontrar los siguientes tipos de selectores:</p><br>
+        <p><b>Universales:</b> que seleccionan todos los elementos de la página. Se indica mediante un asterisco (*), aunque no se suelen usar mucho.</p>
+        <p><b>De tipo o etiqueta:</b>  selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector</p>
+        <p><b>Descendente:</b> Selecciona los elementos que se encuentran dentro de otros elementos.</p>
+        <p><b>De clase:</b> con este podemos por ejemplo aplicar estilo CSS a todo un párrafo.</p>
+        <p><b>De ID:</b> permite seleccionar un elemento de la página a través del valor de su atributo id.</p><br>
+        <p>Además tenemos una serie de selectores más avanzados: de hijos, adyacente y de atributos.</p>
+        </div>
+    </div>
+    
+    <div class="parte-final">
+       <hr class="division">
+       <div class="clearfix">
+           <div class="col-md-2 col-md-offset-1">
+               <h6>IES Vicente Aleixandre, Sevilla</h6>
+               <h6>2017</h6>
+           </div>
+           <div class="col-md-2 col-md-offset-7">
+               <h6>&#169; Copyright</h6>
+               <h6>Marca registrada</h6>
+           </div>
+       </div>
+       <br>
+
+    </div>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
